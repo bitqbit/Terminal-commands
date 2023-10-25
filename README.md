@@ -1,1 +1,16 @@
-# Terminal-commands
+1. Switch to an admin account by running ---> su <ADMIN_ACCOUNT>
+
+2. Verify that line  #includedir /private/etc/sudoers.d exists by running ---> sudo cat /etc/sudoers
+   
+3. Use visudo 2 to create a new sudoers file 3 by running --->    sudo visudo -f /etc/sudoers.d/sudoers
+ 
+4. Press the i key for Insert mode, then type the following line --->    <YOUR_ACCOUNT> ALL=(ALL) ALL
+   
+5.Press ESC, then type :x followed by the ENTER key to save your changes
+
+6. Verify your changes by running ---> sudo cat /etc/sudoers.d/sudoers
+
+7. Test your sudo access by running a simple command, such as --->  sudo echo "hello world"
+
+
+
